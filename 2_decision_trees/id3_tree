@@ -1,43 +1,79 @@
 // The Decision Tree
 digraph {
-	5 [label="
-id: 5
-classCounts: Counter({'+': 4, '-': 1})"]
-	4 -> 5
-	7 [label="
-id: 7
-classCounts: Counter({'-': 1})"]
-	4 -> 7
-	9 [label="
-id: 9
-label: +"]
-	4 -> 9
-	4 [label="
-id: 4
-samples: 6
-classCounts: Counter({'+': 4, '-': 2})"]
-	3 [label="
-id: 3
-classCounts: Counter({'+': 4, '-': 2})"]
-	2 -> 3
-	10 [label="
-id: 10
-classCounts: Counter({'-': 4, '+': 2})"]
-	2 -> 10
-	2 [label="
-id: 2
-samples: 12
-classCounts: Counter({'+': 6, '-': 6})"]
 	1 [label="
 id: 1
+attribute: shape
+samples: 12
 classCounts: Counter({'+': 6, '-': 6})"]
-	0 -> 1
+	3 [label="
+id: 3
+attribute: size
+samples: 6
+classCounts: Counter({'+': 4, '-': 2})"]
+	1 -> 3
+	5 [label="
+id: 5
+attribute: color
+samples: 5
+classCounts: Counter({'+': 4, '-': 1})"]
+	3 -> 5
+	7 [label="
+id: 7
+attribute: color
+samples: 1
+classCounts: Counter({'-': 1})"]
+	3 -> 7
+	10 [label="
+id: 10
+attribute: size
+samples: 6
+classCounts: Counter({'-': 4, '+': 2})"]
+	1 -> 10
 	12 [label="
 id: 12
+attribute: color
+samples: 6
+classCounts: Counter({'-': 4, '+': 2})"]
+	10 -> 12
+	16 [label="
+id: 16
+attribute: shape
+samples: 4
 classCounts: Counter({'+': 3, '-': 1})"]
-	0 -> 12
-	0 [label="
-id: 0
-samples: 16
-classCounts: Counter({'+': 9, '-': 7})"]
+	18 [label="
+id: 18
+attribute: size
+samples: 2
+classCounts: Counter({'+': 2})"]
+	16 -> 18
+	20 [label="
+id: 20
+attribute: color
+samples: 1
+classCounts: Counter({'+': 1})"]
+	18 -> 20
+	22 [label="
+id: 22
+attribute: color
+samples: 1
+classCounts: Counter({'+': 1})"]
+	18 -> 22
+	25 [label="
+id: 25
+attribute: size
+samples: 2
+classCounts: Counter({'-': 1, '+': 1})"]
+	16 -> 25
+	27 [label="
+id: 27
+attribute: color
+samples: 1
+classCounts: Counter({'+': 1})"]
+	25 -> 27
+	29 [label="
+id: 29
+attribute: color
+samples: 1
+classCounts: Counter({'-': 1})"]
+	25 -> 29
 }

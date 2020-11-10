@@ -60,11 +60,15 @@ class ID3DecisionTreeClassifier :
 
     # the entry point for the recursive ID3-algorithm, you need to fill in the calls to your recursive implementation
     def fit(self, data, target, attributes, classes):
-
         # root should become the output of the recursive tree creation
-        root = self.new_ID3_node()
-        root.update({'classCounts': Counter(target), 'samples': len(data)})
+        return self.id3(data, target, attributes, classes)
 
+    # id3 algorithm
+    def id3(self, data, target, attributes, classes):
+        root = self.new_ID3_node() 
+        root.update({'samples': len(data), 'entropy': "entropy", 'classCount': Counter(target)})
+
+        #self.add_node_to_graph(root) # unsure where to place this
 
         # If all samples belong belong to one class, return the single node tree with class as label
         c = target[0]
@@ -82,16 +86,17 @@ class ID3DecisionTreeClassifier :
             return root
         else:
             # target_attribute = attribute that generates the maximum information on tree split
-            # target_attribute = self.find_split_attr(attributes)
             target_attribute = self.find_split_attr(attributes)
-
             attr_index = list(attributes.keys()).index(target_attribute)  #what position in data corresponds to the target_attribute value. 
 
             # for each v in values, create a new tree branch below the root node
-            values = attributes.pop(target_attribute) # pops the attribute. 
-            for v_index, v in enumerate(values):
-                n = self.new_ID3_node()
+            rem_attr = attributes.copy() # remaining attributes
+            values = rem_attr.pop(target_attribute) # pops the attribute. 
+            for v in values:
 
+                nbr_of_child_nodes = len(values)
+
+                n = self.new_ID3_node()
                 # let samples(v) be subset of samples that have value v. 
                 samples = []
                 for d,t in zip(data,target):
@@ -101,21 +106,25 @@ class ID3DecisionTreeClassifier :
                 # if samples is empty, add leaf node with label most common class in samples
                 if (len(samples) == 0):
                     most_common = Counter(target).most_common(1)[0][0]
+                    
+                    #node = self.new_ID3_node()
                     n.update({'label': most_common})
+                    #return node
                 else:
                     # add subtree below this branch -> call fit recursivly? 
                     # target attribute?
-                    
                     data_next = [s[0] for s in samples]
                     target_next = [s[1] for s in samples]
-                    n.update({'classCounts': Counter(target_next), 'samples': len(data_next)})
-                    self.fit(data_next, target_next, attributes, classes)
-                self.add_node_to_graph(n, root['id']) # unsure where to place this
+                    n.update({'classCounts': Counter(target_next), 'samples': len(data_next), 'attribute': target_attribute})
 
-        self.add_node_to_graph(root)
-
+                    # add node to graph with its parents id, (root's id)
+                    self.add_node_to_graph(n, root['id']-1) # unsure where to place this
+                    self.id3(data_next, target_next, rem_attr, classes)
         return root
-
+   
+            
+                
+        
 
 
     def predict(self, data, tree) :
