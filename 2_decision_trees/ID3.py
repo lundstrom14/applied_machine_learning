@@ -50,19 +50,68 @@ class ID3DecisionTreeClassifier :
 
 
     # For you to fill in; Suggested function to find the best attribute to split with, given the set of
-    # remaining attributes, the currently evaluated data and target.
-    def find_split_attr(self):
+    # remaining attributes, the currently evaluated data and target. 
+    def find_split_attr(self, attributes):
 
         # Change this to make some more sense
-        return None
+        # USE INFORMATION GAIN
+        return attributes.copy().popitem()[0]
 
 
     # the entry point for the recursive ID3-algorithm, you need to fill in the calls to your recursive implementation
     def fit(self, data, target, attributes, classes):
 
-        # fill in something more sensible here... root should become the output of the recursive tree creation
+        # root should become the output of the recursive tree creation
         root = self.new_ID3_node()
-        root.update({'value': 'hello world'})
+        root.update({'classCounts': Counter(target), 'samples': len(data)})
+
+
+        # If all samples belong belong to one class, return the single node tree with class as label
+        c = target[0]
+        for i in range(len(target)):
+            if (c != target[i]):
+                break
+            if (i == len(target)):
+                root.update({'label': c})
+                return root
+
+        # If Attributes is empty, then return the single node tree with label = most common class value
+        if (len(attributes) == 0):
+            most_common = Counter(target).most_common(1)[0][0] # counts the most common values in target
+            root.update({'label': most_common})
+            return root
+        else:
+            # target_attribute = attribute that generates the maximum information on tree split
+            # target_attribute = self.find_split_attr(attributes)
+            target_attribute = self.find_split_attr(attributes)
+
+            attr_index = list(attributes.keys()).index(target_attribute)  #what position in data corresponds to the target_attribute value. 
+
+            # for each v in values, create a new tree branch below the root node
+            values = attributes.pop(target_attribute) # pops the attribute. 
+            for v_index, v in enumerate(values):
+                n = self.new_ID3_node()
+
+                # let samples(v) be subset of samples that have value v. 
+                samples = []
+                for d,t in zip(data,target):
+                    if v in d[attr_index]:
+                        samples.append([d,t])  #samples is on the form [[('y', 's', 'r'), '+'], [..]], ie nested tuples.
+
+                # if samples is empty, add leaf node with label most common class in samples
+                if (len(samples) == 0):
+                    most_common = Counter(target).most_common(1)[0][0]
+                    n.update({'label': most_common})
+                else:
+                    # add subtree below this branch -> call fit recursivly? 
+                    # target attribute?
+                    
+                    data_next = [s[0] for s in samples]
+                    target_next = [s[1] for s in samples]
+                    n.update({'classCounts': Counter(target_next), 'samples': len(data_next)})
+                    self.fit(data_next, target_next, attributes, classes)
+                self.add_node_to_graph(n, root['id']) # unsure where to place this
+
         self.add_node_to_graph(root)
 
         return root

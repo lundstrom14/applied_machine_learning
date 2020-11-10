@@ -14,9 +14,9 @@ def main():
     myTree = id3.fit(data, target, attributes, classes)
     print(myTree)
     plot = id3.make_dot_data()
-    plot.render("testTree")
-    predicted = id3.predict(data2, myTree)
-    print(predicted)
+    plot.render("id3_tree")
+    #predicted = id3.predict(data2, myTree)
+    #print(predicted)
 
 
 if __name__ == "__main__": main()

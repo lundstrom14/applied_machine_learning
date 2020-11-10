@@ -1,0 +1,43 @@
+// The Decision Tree
+digraph {
+	5 [label="
+id: 5
+classCounts: Counter({'+': 4, '-': 1})"]
+	4 -> 5
+	7 [label="
+id: 7
+classCounts: Counter({'-': 1})"]
+	4 -> 7
+	9 [label="
+id: 9
+label: +"]
+	4 -> 9
+	4 [label="
+id: 4
+samples: 6
+classCounts: Counter({'+': 4, '-': 2})"]
+	3 [label="
+id: 3
+classCounts: Counter({'+': 4, '-': 2})"]
+	2 -> 3
+	10 [label="
+id: 10
+classCounts: Counter({'-': 4, '+': 2})"]
+	2 -> 10
+	2 [label="
+id: 2
+samples: 12
+classCounts: Counter({'+': 6, '-': 6})"]
+	1 [label="
+id: 1
+classCounts: Counter({'+': 6, '-': 6})"]
+	0 -> 1
+	12 [label="
+id: 12
+classCounts: Counter({'+': 3, '-': 1})"]
+	0 -> 12
+	0 [label="
+id: 0
+samples: 16
+classCounts: Counter({'+': 9, '-': 7})"]
+}
