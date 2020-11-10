@@ -61,15 +61,16 @@ class ID3DecisionTreeClassifier :
     # the entry point for the recursive ID3-algorithm, you need to fill in the calls to your recursive implementation
     def fit(self, data, target, attributes, classes):
         # root should become the output of the recursive tree creation
-        return self.id3(data, target, attributes, classes)
+        return self.id3(None, data, target, attributes, None)
 
     # id3 algorithm
-    def id3(self, data, target, attributes, classes):
-        root = self.new_ID3_node() 
-        root.update({'samples': len(data), 'entropy': "entropy", 'classCount': Counter(target)})
+    def id3(self, root, data, target, attributes, target_attribute):
+        if (root is None):
+            root = self.new_ID3_node() 
 
-        #self.add_node_to_graph(root) # unsure where to place this
-
+        root.update({'classCounts': Counter(target), 'samples': len(data), 'attribute': target_attribute})
+        self.add_node_to_graph(root)
+        
         # If all samples belong belong to one class, return the single node tree with class as label
         c = target[0]
         for i in range(len(target)):
@@ -94,32 +95,30 @@ class ID3DecisionTreeClassifier :
             values = rem_attr.pop(target_attribute) # pops the attribute. 
             for v in values:
 
-                nbr_of_child_nodes = len(values)
-
-                n = self.new_ID3_node()
                 # let samples(v) be subset of samples that have value v. 
                 samples = []
                 for d,t in zip(data,target):
                     if v in d[attr_index]:
                         samples.append([d,t])  #samples is on the form [[('y', 's', 'r'), '+'], [..]], ie nested tuples.
+                
 
                 # if samples is empty, add leaf node with label most common class in samples
                 if (len(samples) == 0):
                     most_common = Counter(target).most_common(1)[0][0]
                     
-                    #node = self.new_ID3_node()
-                    n.update({'label': most_common})
-                    #return node
+                    leaf_node = self.new_ID3_node()
+                    leaf_node.update({'label': most_common})
+                    self.add_node_to_graph(leaf_node, root['id']) # unsure where to place this
+                    return leaf_node
                 else:
                     # add subtree below this branch -> call fit recursivly? 
                     # target attribute?
+                    subnode = self.new_ID3_node()
                     data_next = [s[0] for s in samples]
                     target_next = [s[1] for s in samples]
-                    n.update({'classCounts': Counter(target_next), 'samples': len(data_next), 'attribute': target_attribute})
 
-                    # add node to graph with its parents id, (root's id)
-                    self.add_node_to_graph(n, root['id']-1) # unsure where to place this
-                    self.id3(data_next, target_next, rem_attr, classes)
+                    self.add_node_to_graph(subnode, root['id']) # unsure where to place this
+                    self.id3(subnode, data_next, target_next, rem_attr, target_attribute) 
         return root
    
             
