@@ -59,9 +59,9 @@ class ID3DecisionTreeClassifier :
         IG_with_attr = (-1,"") 
 
         # for every remaning attributes, we want to get the information Gain 
-        attr = list(attributes.keys())
+        attr = list(global_attributes.keys())
         for data_col, a in zip(zip(*data),attr): # zip data to only get ordered value from tuples and the attribute, ex ('color')
-            entropy = self.subset_entropy(data_col, target, attributes[a])
+            entropy = self.subset_entropy(data_col, target, global_attributes[a])
             IG = IS - entropy
             if (IG > IG_with_attr[0]):
                 IG_with_attr = (IG, a, IS)
@@ -110,31 +110,34 @@ class ID3DecisionTreeClassifier :
     def id3(self, root, data, target, attributes, target_attribute):
         if (root is None):
             root = self.new_ID3_node() 
-            root.update({'classCounts': Counter(target), 'samples': len(data), 'attribute': target_attribute})
+
+        
 
         # If all samples belong belong to one class, return the single node tree with class as label
         c = target[0]
         for i in range(len(target)):
             if (c != target[i]):
                 break
-            if (i == len(target)):
-                root.update({'label': c})
-                self.add_node_to_graph(root)
+            if (i == len(target)-1):
+                #self.add_node_to_graph(root)
                 return root
 
         # If Attributes is empty, then return the single node tree with label = most common class value
         if (len(attributes) == 0):
             most_common = Counter(target).most_common(1)[0][0] # counts the most common values in target
-            root.update({'label': most_common, 'samples': len(data)})
-            self.add_node_to_graph(root)
+            root.update({'label': most_common, 'samples': len(data), 'entropy': self.entropy(target)})
+            #self.add_node_to_graph(root)
             return root
         else:
             # target_attribute = attribute that generates the maximum information on tree split
             find_split_attr = self.find_split_attr(data, target, attributes)
             A = find_split_attr[1] #stored in postion 1
-            entropy = find_split_attr[2] #stored in position 2
 
-            root.update({'classCounts': Counter(target), 'samples': len(data), 'attribute': A, 'entropy': entropy})
+
+            if (root['id'] == 0):
+                root.update({'classCounts': Counter(target), 'samples': len(data), 'attribute': target_attribute, 'entropy': self.entropy(target), 'attribute': A})
+                self.add_node_to_graph(root)
+            root.update({'attribute': A})
 
             attr_index = list(global_attributes.keys()).index(A)  #what position in data corresponds to the target_attribute value. 
 
@@ -150,16 +153,17 @@ class ID3DecisionTreeClassifier :
                     if v in d[attr_index]:
                         samples.append([d,t])  #samples is on the form [[('y', 's', 'r'), '+'], [..]], ie nested tuples.
 
+                root.update({"value": v})
                 # if samples is empty, add leaf node with label most common class in samples
                 if (len(samples) == 0):
                     most_common = Counter(target).most_common(1)[0][0]
 
                     leaf_node = self.new_ID3_node()
-                    leaf_node.update({'label': most_common})
-                    self.add_node_to_graph(leaf_node, root['id']) # add again if subnode is a leaf. we want the label. 
+                    leaf_node.update({'label': most_common, 'samples': len(samples), "value": root["value"]})
+                    self.add_node_to_graph(leaf_node, root['id'])
                 else:
                     # add subtree below this branch -> call recursivly? 
-            
+
                     subnode = self.new_ID3_node()
                     data_next = [s[0] for s in samples]
                     target_next = [s[1] for s in samples]
@@ -167,10 +171,9 @@ class ID3DecisionTreeClassifier :
                     rem_attr = attributes.copy()
                     del rem_attr[A]
 
-                    #subnode.update({'classCounts': Counter(target_next), 'samples': len(data_next), 'attribute': A})
-                    self.add_node_to_graph(subnode, root['id']) # unsure where to place this
-                    self.id3(subnode, data_next, target_next, rem_attr, A)
-        self.add_node_to_graph(root)
+                    node = self.id3(subnode, data_next, target_next, rem_attr, A)
+                    node.update({'label': c, 'samples': len(data), 'entropy': self.entropy(target_next), 'classCount': Counter(target_next), "value": v})
+                    self.add_node_to_graph(node, root['id'])
         return root
    
             
