@@ -117,6 +117,7 @@ class ID3DecisionTreeClassifier :
             if (c != target[i]):
                 break
             if (i == len(target)-1):
+                root.update({'label': c})
                 return root
 
         # If Attributes is empty, then return the single node tree with label = most common class value
@@ -165,7 +166,7 @@ class ID3DecisionTreeClassifier :
                     del rem_attr[A]
                     subnode.update({'nodes': []})
                     node = self.id3(subnode, data_next, target_next, rem_attr, A)
-                    node.update({'label': c, 'samples': len(data), 'entropy': self.entropy(target_next), 'classCount': Counter(target_next), "value": v})
+                    node.update({'entropy': self.entropy(target_next), 'classCount': Counter(target_next), "value": v})
                     root['nodes'].append(node)
                     self.add_node_to_graph(node, root['id'])
         return root

@@ -12,16 +12,15 @@ id: 3
 value: y
 label: +
 entropy: 0.7219280948873623
-samples: 6
+samples: 5
 nodes: 0
 classCount: Counter({'+': 4, '-': 1})"]
 	2 -> 3
 	4 [label="
 id: 4
 value: g
-label: +
+label: -
 entropy: 0.0
-samples: 6
 nodes: 0
 classCount: Counter({'-': 1})"]
 	2 -> 4
@@ -35,10 +34,8 @@ nodes: 0"]
 	2 [label="
 id: 2
 value: r
-label: +
 attribute: color
 entropy: 0.9182958340544896
-samples: 8
 nodes: 3
 classCount: Counter({'+': 4, '-': 2})"]
 	1 -> 2
@@ -47,26 +44,23 @@ id: 6
 value: i
 label: +
 entropy: 0.0
-samples: 8
 nodes: 0
 classCount: Counter({'+': 2})"]
 	1 -> 6
 	1 [label="
 id: 1
 value: s
-label: +
 attribute: shape
 entropy: 0.8112781244591328
-samples: 16
 nodes: 2
 classCount: Counter({'+': 6, '-': 2})"]
 	0 -> 1
 	9 [label="
 id: 9
 value: r
-label: +
+label: -
 entropy: 0.9182958340544896
-samples: 7
+samples: 6
 nodes: 0
 classCount: Counter({'-': 4, '+': 2})"]
 	8 -> 9
@@ -75,17 +69,14 @@ id: 10
 value: i
 label: +
 entropy: 0.0
-samples: 7
 nodes: 0
 classCount: Counter({'+': 1})"]
 	8 -> 10
 	8 [label="
 id: 8
 value: y
-label: -
 attribute: shape
 entropy: 0.9852281360342516
-samples: 8
 nodes: 2
 classCount: Counter({'-': 4, '+': 3})"]
 	7 -> 8
@@ -94,7 +85,6 @@ id: 11
 value: g
 label: -
 entropy: 0.0
-samples: 8
 nodes: 0
 classCount: Counter({'-': 1})"]
 	7 -> 11
@@ -108,10 +98,8 @@ nodes: 0"]
 	7 [label="
 id: 7
 value: l
-label: +
 attribute: color
 entropy: 0.954434002924965
-samples: 16
 nodes: 3
 classCount: Counter({'-': 5, '+': 3})"]
 	0 -> 7

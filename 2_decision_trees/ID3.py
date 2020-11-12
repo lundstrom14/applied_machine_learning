@@ -122,6 +122,7 @@ class ID3DecisionTreeClassifier :
             if (c != target[i]):
                 break
             if (i == len(target)-1):
+                root.update({'label': c})
                 return root
 
         # If Attributes is empty, then return the single node tree with label = most common class value
@@ -170,7 +171,7 @@ class ID3DecisionTreeClassifier :
                     del rem_attr[A]
                     subnode.update({'nodes': []})
                     node = self.id3(subnode, data_next, target_next, rem_attr, A)
-                    node.update({'label': c, 'samples': len(data), 'entropy': self.entropy(target_next), 'classCount': Counter(target_next), "value": v})
+                    node.update({'samples': len(data), 'entropy': self.entropy(target_next), 'classCount': Counter(target_next), "value": v})
                     root['nodes'].append(node)
                     self.add_node_to_graph(node, root['id'])
         return root
@@ -198,13 +199,13 @@ class ID3DecisionTreeClassifier :
             return self.predict_rek(child_node, x)
 
     def is_leaf(self, node):
-        if len(node['nodes']) == 0: # if 'nodes' list is empty
+        if len(node['nodes']) == 0: 
             return True
         return False
 
     def find_child(self, node, x):
         # x = ('y', 's', 'r')
-        A = node['attribute'] # what attribute to check for?
+        A = node['attribute'] # what attribute to check for
         attr_index = list(global_attributes.keys()).index(A)  # what postion/column in the data corresponds to the target_attribute value. 
 
         for n in node['nodes']:

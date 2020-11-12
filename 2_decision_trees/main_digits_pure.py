@@ -17,7 +17,9 @@ def main():
     #print(attributes)
         
     digits = datasets.load_digits()
-    num_split = int(0.1*len(digits.data))
+    digits.data
+    
+    num_split = int(0.7*len(digits.data))
     train_features = digits.data[:num_split]
     train_labels =  digits.target[:num_split]
     test_features = digits.data[num_split:]
@@ -30,9 +32,12 @@ def main():
     # #print(myTree)
     plot = id3.make_dot_data()
     plot.render("id3_tree_digits")
-    # predicted = id3.predict(data2, myTree)
-    # print(predicted)
-    # print(target2)
+    predicted_labels = id3.predict(test_features, myTree)
+    #print(predicted_labels)
+
+    print(metrics.classification_report(test_labels, predicted_labels))
+    print(metrics.confusion_matrix(test_labels, predicted_labels))
+
 
 
 if __name__ == "__main__": main()
