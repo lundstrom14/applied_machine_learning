@@ -14,12 +14,12 @@ def main():
     attributes = OrderedDict()
     for i in range(64):
         attributes[i] = attr
-    #print(attributes)
+    print(attributes)
         
     digits = datasets.load_digits()
     digits.data
     
-    num_split = int(0.7*len(digits.data))
+    num_split = int(0.1*len(digits.data))
     train_features = digits.data[:num_split]
     train_labels =  digits.target[:num_split]
     test_features = digits.data[num_split:]
@@ -31,7 +31,7 @@ def main():
     myTree = id3.fit(train_features, train_labels, attributes, classes)
     # #print(myTree)
     plot = id3.make_dot_data()
-    plot.render("id3_tree_digits")
+    plot.render("id3_tree_digits_pure")
     predicted_labels = id3.predict(test_features, myTree)
     #print(predicted_labels)
 
