@@ -1,0 +1,4043 @@
+// The Decision Tree
+digraph {
+	0 [label="
+id: 0
+attribute: 42
+entropy: 3.3190316298326605
+samples: 179
+classCounts: Counter({5: 20, 0: 19, 9: 19, 1: 18, 7: 18, 8: 18, 3: 17, 4: 17, 6: 17, 2: 16})
+nodes: 0"]
+	2 [label="
+id: 2
+value: 0
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({1: 9})"]
+	1 -> 2
+	3 [label="
+id: 3
+value: 1
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({1: 4})"]
+	1 -> 3
+	4 [label="
+id: 4
+value: 2
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({1: 1})"]
+	1 -> 4
+	5 [label="
+id: 5
+value: 3
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({4: 1})"]
+	1 -> 5
+	6 [label="
+id: 6
+value: 4
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({5: 1})"]
+	1 -> 6
+	7 [label="
+id: 7
+value: 5
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({5: 1})"]
+	1 -> 7
+	8 [label="
+id: 8
+value: 6
+label: 3
+samples: 0
+nodes: 0"]
+	1 -> 8
+	9 [label="
+id: 9
+value: 7
+label: 3
+samples: 0
+nodes: 0"]
+	1 -> 9
+	11 [label="
+id: 11
+value: 0
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 11
+	12 [label="
+id: 12
+value: 1
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 12
+	13 [label="
+id: 13
+value: 2
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 13
+	14 [label="
+id: 14
+value: 3
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 14
+	15 [label="
+id: 15
+value: 4
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 15
+	16 [label="
+id: 16
+value: 5
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({7: 1})"]
+	10 -> 16
+	17 [label="
+id: 17
+value: 6
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 17
+	18 [label="
+id: 18
+value: 7
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 18
+	19 [label="
+id: 19
+value: 8
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 19
+	20 [label="
+id: 20
+value: 9
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 20
+	21 [label="
+id: 21
+value: 10
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 21
+	22 [label="
+id: 22
+value: 11
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 22
+	23 [label="
+id: 23
+value: 12
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({7: 1})"]
+	10 -> 23
+	24 [label="
+id: 24
+value: 13
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 24
+	25 [label="
+id: 25
+value: 14
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({5: 2})"]
+	10 -> 25
+	26 [label="
+id: 26
+value: 15
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 26
+	27 [label="
+id: 27
+value: 16
+label: 7
+samples: 0
+nodes: 0"]
+	10 -> 27
+	10 [label="
+id: 10
+value: 8
+label: 3
+attribute: 59
+entropy: 1.0
+samples: 74
+nodes: 17
+classCount: Counter({7: 2, 5: 2})"]
+	1 -> 10
+	29 [label="
+id: 29
+value: 0
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 29
+	30 [label="
+id: 30
+value: 1
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 30
+	31 [label="
+id: 31
+value: 2
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 31
+	32 [label="
+id: 32
+value: 3
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 32
+	33 [label="
+id: 33
+value: 4
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 33
+	34 [label="
+id: 34
+value: 5
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 34
+	35 [label="
+id: 35
+value: 6
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 35
+	36 [label="
+id: 36
+value: 7
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 36
+	37 [label="
+id: 37
+value: 8
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 37
+	38 [label="
+id: 38
+value: 9
+label: 7
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({4: 1})"]
+	28 -> 38
+	39 [label="
+id: 39
+value: 10
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 39
+	40 [label="
+id: 40
+value: 11
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 40
+	41 [label="
+id: 41
+value: 12
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 41
+	42 [label="
+id: 42
+value: 13
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 42
+	43 [label="
+id: 43
+value: 14
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 43
+	44 [label="
+id: 44
+value: 15
+label: 7
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({7: 1})"]
+	28 -> 44
+	45 [label="
+id: 45
+value: 16
+label: 7
+samples: 0
+nodes: 0"]
+	28 -> 45
+	28 [label="
+id: 28
+value: 9
+label: 3
+attribute: 4
+entropy: 1.0
+samples: 74
+nodes: 17
+classCount: Counter({7: 1, 4: 1})"]
+	1 -> 28
+	47 [label="
+id: 47
+value: 0
+label: 5
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({4: 1})"]
+	46 -> 47
+	48 [label="
+id: 48
+value: 1
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 48
+	49 [label="
+id: 49
+value: 2
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 49
+	50 [label="
+id: 50
+value: 3
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 50
+	51 [label="
+id: 51
+value: 4
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 51
+	52 [label="
+id: 52
+value: 5
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 52
+	53 [label="
+id: 53
+value: 6
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 53
+	54 [label="
+id: 54
+value: 7
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 54
+	55 [label="
+id: 55
+value: 8
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 55
+	56 [label="
+id: 56
+value: 9
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 56
+	57 [label="
+id: 57
+value: 10
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 57
+	58 [label="
+id: 58
+value: 11
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 58
+	59 [label="
+id: 59
+value: 12
+label: 5
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({5: 1})"]
+	46 -> 59
+	60 [label="
+id: 60
+value: 13
+label: 5
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({9: 1})"]
+	46 -> 60
+	61 [label="
+id: 61
+value: 14
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 61
+	62 [label="
+id: 62
+value: 15
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 62
+	63 [label="
+id: 63
+value: 16
+label: 5
+samples: 0
+nodes: 0"]
+	46 -> 63
+	46 [label="
+id: 46
+value: 10
+label: 3
+attribute: 2
+entropy: 1.584962500721156
+samples: 74
+nodes: 17
+classCount: Counter({5: 1, 9: 1, 4: 1})"]
+	1 -> 46
+	65 [label="
+id: 65
+value: 0
+label: 1
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({1: 1})"]
+	64 -> 65
+	66 [label="
+id: 66
+value: 1
+label: 1
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({9: 1})"]
+	64 -> 66
+	67 [label="
+id: 67
+value: 2
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 67
+	68 [label="
+id: 68
+value: 3
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 68
+	69 [label="
+id: 69
+value: 4
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 69
+	70 [label="
+id: 70
+value: 5
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 70
+	71 [label="
+id: 71
+value: 6
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 71
+	72 [label="
+id: 72
+value: 7
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 72
+	73 [label="
+id: 73
+value: 8
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 73
+	74 [label="
+id: 74
+value: 9
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 74
+	75 [label="
+id: 75
+value: 10
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 75
+	76 [label="
+id: 76
+value: 11
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 76
+	77 [label="
+id: 77
+value: 12
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 77
+	78 [label="
+id: 78
+value: 13
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 78
+	79 [label="
+id: 79
+value: 14
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 79
+	80 [label="
+id: 80
+value: 15
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 80
+	81 [label="
+id: 81
+value: 16
+label: 1
+samples: 0
+nodes: 0"]
+	64 -> 81
+	64 [label="
+id: 64
+value: 11
+label: 3
+attribute: 2
+entropy: 1.0
+samples: 74
+nodes: 17
+classCount: Counter({1: 1, 9: 1})"]
+	1 -> 64
+	83 [label="
+id: 83
+value: 0
+label: 9
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({9: 2})"]
+	82 -> 83
+	84 [label="
+id: 84
+value: 1
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 84
+	85 [label="
+id: 85
+value: 2
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 85
+	86 [label="
+id: 86
+value: 3
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 86
+	87 [label="
+id: 87
+value: 4
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 87
+	88 [label="
+id: 88
+value: 5
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 88
+	89 [label="
+id: 89
+value: 6
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 89
+	90 [label="
+id: 90
+value: 7
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 90
+	91 [label="
+id: 91
+value: 8
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 91
+	92 [label="
+id: 92
+value: 9
+label: 9
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({3: 1})"]
+	82 -> 92
+	93 [label="
+id: 93
+value: 10
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 93
+	94 [label="
+id: 94
+value: 11
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 94
+	95 [label="
+id: 95
+value: 12
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 95
+	96 [label="
+id: 96
+value: 13
+label: 9
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({4: 1})"]
+	82 -> 96
+	97 [label="
+id: 97
+value: 14
+label: 9
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({3: 1})"]
+	82 -> 97
+	98 [label="
+id: 98
+value: 15
+label: 9
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({2: 1})"]
+	82 -> 98
+	99 [label="
+id: 99
+value: 16
+label: 9
+samples: 0
+nodes: 0"]
+	82 -> 99
+	82 [label="
+id: 82
+value: 12
+label: 3
+attribute: 44
+entropy: 1.9182958340544893
+samples: 74
+nodes: 17
+classCount: Counter({9: 2, 3: 2, 2: 1, 4: 1})"]
+	1 -> 82
+	101 [label="
+id: 101
+value: 0
+label: 5
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({9: 6})"]
+	100 -> 101
+	102 [label="
+id: 102
+value: 1
+label: 5
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({9: 1})"]
+	100 -> 102
+	103 [label="
+id: 103
+value: 2
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 103
+	104 [label="
+id: 104
+value: 3
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 104
+	105 [label="
+id: 105
+value: 4
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 105
+	106 [label="
+id: 106
+value: 5
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 106
+	107 [label="
+id: 107
+value: 6
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 107
+	108 [label="
+id: 108
+value: 7
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 108
+	109 [label="
+id: 109
+value: 8
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 109
+	110 [label="
+id: 110
+value: 9
+label: 5
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({5: 2})"]
+	100 -> 110
+	111 [label="
+id: 111
+value: 10
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 111
+	112 [label="
+id: 112
+value: 11
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 112
+	113 [label="
+id: 113
+value: 12
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 113
+	114 [label="
+id: 114
+value: 13
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 114
+	115 [label="
+id: 115
+value: 14
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 115
+	116 [label="
+id: 116
+value: 15
+label: 9
+samples: 0
+nodes: 0"]
+	100 -> 116
+	117 [label="
+id: 117
+value: 16
+label: 5
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({5: 1})"]
+	100 -> 117
+	100 [label="
+id: 100
+value: 13
+label: 3
+attribute: 44
+entropy: 0.8812908992306927
+samples: 74
+nodes: 17
+classCount: Counter({9: 7, 5: 3})"]
+	1 -> 100
+	118 [label="
+id: 118
+value: 14
+label: 3
+entropy: 0.0
+samples: 74
+nodes: 0
+classCount: Counter({9: 1})"]
+	1 -> 118
+	120 [label="
+id: 120
+value: 0
+label: 3
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({9: 3})"]
+	119 -> 120
+	121 [label="
+id: 121
+value: 1
+label: 3
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({3: 2})"]
+	119 -> 121
+	122 [label="
+id: 122
+value: 2
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 122
+	123 [label="
+id: 123
+value: 3
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 123
+	124 [label="
+id: 124
+value: 4
+label: 3
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({3: 2})"]
+	119 -> 124
+	125 [label="
+id: 125
+value: 5
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 125
+	126 [label="
+id: 126
+value: 6
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 126
+	127 [label="
+id: 127
+value: 7
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 127
+	128 [label="
+id: 128
+value: 8
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 128
+	129 [label="
+id: 129
+value: 9
+label: 3
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({3: 1})"]
+	119 -> 129
+	130 [label="
+id: 130
+value: 10
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 130
+	131 [label="
+id: 131
+value: 11
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 131
+	132 [label="
+id: 132
+value: 12
+label: 3
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({5: 1})"]
+	119 -> 132
+	133 [label="
+id: 133
+value: 13
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 133
+	134 [label="
+id: 134
+value: 14
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 134
+	135 [label="
+id: 135
+value: 15
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 135
+	136 [label="
+id: 136
+value: 16
+label: 3
+samples: 0
+nodes: 0"]
+	119 -> 136
+	119 [label="
+id: 119
+value: 15
+label: 3
+attribute: 5
+entropy: 1.3516441151533924
+samples: 74
+nodes: 17
+classCount: Counter({3: 5, 9: 3, 5: 1})"]
+	1 -> 119
+	138 [label="
+id: 138
+value: 0
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 138
+	139 [label="
+id: 139
+value: 1
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 139
+	140 [label="
+id: 140
+value: 2
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 140
+	141 [label="
+id: 141
+value: 3
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({9: 1})"]
+	137 -> 141
+	142 [label="
+id: 142
+value: 4
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 142
+	143 [label="
+id: 143
+value: 5
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 143
+	144 [label="
+id: 144
+value: 6
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 144
+	145 [label="
+id: 145
+value: 7
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 145
+	146 [label="
+id: 146
+value: 8
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 146
+	147 [label="
+id: 147
+value: 9
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 147
+	148 [label="
+id: 148
+value: 10
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({5: 1})"]
+	137 -> 148
+	149 [label="
+id: 149
+value: 11
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 149
+	151 [label="
+id: 151
+value: 0
+label: 9
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({5: 2})"]
+	150 -> 151
+	152 [label="
+id: 152
+value: 1
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 152
+	153 [label="
+id: 153
+value: 2
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 153
+	154 [label="
+id: 154
+value: 3
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 154
+	155 [label="
+id: 155
+value: 4
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 155
+	156 [label="
+id: 156
+value: 5
+label: 9
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({9: 1})"]
+	150 -> 156
+	157 [label="
+id: 157
+value: 6
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 157
+	158 [label="
+id: 158
+value: 7
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 158
+	159 [label="
+id: 159
+value: 8
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 159
+	160 [label="
+id: 160
+value: 9
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 160
+	161 [label="
+id: 161
+value: 10
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 161
+	162 [label="
+id: 162
+value: 11
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 162
+	163 [label="
+id: 163
+value: 12
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 163
+	164 [label="
+id: 164
+value: 13
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 164
+	165 [label="
+id: 165
+value: 14
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 165
+	166 [label="
+id: 166
+value: 15
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 166
+	167 [label="
+id: 167
+value: 16
+label: 5
+samples: 0
+nodes: 0"]
+	150 -> 167
+	150 [label="
+id: 150
+value: 12
+label: 5
+attribute: 54
+entropy: 0.9182958340544896
+samples: 20
+nodes: 17
+classCount: Counter({5: 2, 9: 1})"]
+	137 -> 150
+	168 [label="
+id: 168
+value: 13
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 168
+	169 [label="
+id: 169
+value: 14
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({3: 1})"]
+	137 -> 169
+	170 [label="
+id: 170
+value: 15
+label: 3
+samples: 0
+nodes: 0"]
+	137 -> 170
+	171 [label="
+id: 171
+value: 16
+label: 5
+entropy: 0.0
+samples: 20
+nodes: 0
+classCount: Counter({3: 9})"]
+	137 -> 171
+	137 [label="
+id: 137
+value: 16
+label: 3
+attribute: 13
+entropy: 1.360964047443681
+samples: 74
+nodes: 17
+classCount: Counter({3: 10, 5: 8, 9: 2})"]
+	1 -> 137
+	1 [label="
+id: 1
+value: 0
+label: 0
+attribute: 3
+entropy: 2.4281175367092396
+samples: 179
+nodes: 17
+classCount: Counter({3: 17, 5: 17, 9: 17, 1: 15, 4: 4, 7: 3, 2: 1})"]
+	0 -> 1
+	173 [label="
+id: 173
+value: 0
+label: 1
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({1: 1})"]
+	172 -> 173
+	174 [label="
+id: 174
+value: 1
+label: 1
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({4: 1})"]
+	172 -> 174
+	175 [label="
+id: 175
+value: 2
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 175
+	176 [label="
+id: 176
+value: 3
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 176
+	177 [label="
+id: 177
+value: 4
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 177
+	178 [label="
+id: 178
+value: 5
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 178
+	179 [label="
+id: 179
+value: 6
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 179
+	180 [label="
+id: 180
+value: 7
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 180
+	181 [label="
+id: 181
+value: 8
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 181
+	182 [label="
+id: 182
+value: 9
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 182
+	183 [label="
+id: 183
+value: 10
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 183
+	184 [label="
+id: 184
+value: 11
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 184
+	185 [label="
+id: 185
+value: 12
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 185
+	186 [label="
+id: 186
+value: 13
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 186
+	187 [label="
+id: 187
+value: 14
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 187
+	188 [label="
+id: 188
+value: 15
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 188
+	189 [label="
+id: 189
+value: 16
+label: 1
+samples: 0
+nodes: 0"]
+	172 -> 189
+	172 [label="
+id: 172
+value: 1
+label: 0
+attribute: 2
+entropy: 1.0
+samples: 179
+nodes: 17
+classCount: Counter({1: 1, 4: 1})"]
+	0 -> 172
+	191 [label="
+id: 191
+value: 0
+label: 7
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({4: 1})"]
+	190 -> 191
+	192 [label="
+id: 192
+value: 1
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 192
+	193 [label="
+id: 193
+value: 2
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 193
+	194 [label="
+id: 194
+value: 3
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 194
+	195 [label="
+id: 195
+value: 4
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 195
+	196 [label="
+id: 196
+value: 5
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 196
+	197 [label="
+id: 197
+value: 6
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 197
+	198 [label="
+id: 198
+value: 7
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 198
+	199 [label="
+id: 199
+value: 8
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 199
+	200 [label="
+id: 200
+value: 9
+label: 7
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({7: 1})"]
+	190 -> 200
+	201 [label="
+id: 201
+value: 10
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 201
+	202 [label="
+id: 202
+value: 11
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 202
+	203 [label="
+id: 203
+value: 12
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 203
+	204 [label="
+id: 204
+value: 13
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 204
+	205 [label="
+id: 205
+value: 14
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 205
+	206 [label="
+id: 206
+value: 15
+label: 7
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({5: 1})"]
+	190 -> 206
+	207 [label="
+id: 207
+value: 16
+label: 7
+samples: 0
+nodes: 0"]
+	190 -> 207
+	190 [label="
+id: 190
+value: 2
+label: 0
+attribute: 2
+entropy: 1.584962500721156
+samples: 179
+nodes: 17
+classCount: Counter({7: 1, 4: 1, 5: 1})"]
+	0 -> 190
+	209 [label="
+id: 209
+value: 0
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({1: 1})"]
+	208 -> 209
+	210 [label="
+id: 210
+value: 1
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({7: 1})"]
+	208 -> 210
+	211 [label="
+id: 211
+value: 2
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({9: 1})"]
+	208 -> 211
+	212 [label="
+id: 212
+value: 3
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 212
+	213 [label="
+id: 213
+value: 4
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 213
+	214 [label="
+id: 214
+value: 5
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 214
+	215 [label="
+id: 215
+value: 6
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({9: 1})"]
+	208 -> 215
+	216 [label="
+id: 216
+value: 7
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({7: 1})"]
+	208 -> 216
+	217 [label="
+id: 217
+value: 8
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({2: 1})"]
+	208 -> 217
+	218 [label="
+id: 218
+value: 9
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 218
+	219 [label="
+id: 219
+value: 10
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 219
+	220 [label="
+id: 220
+value: 11
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 220
+	221 [label="
+id: 221
+value: 12
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 221
+	222 [label="
+id: 222
+value: 13
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 222
+	223 [label="
+id: 223
+value: 14
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 223
+	224 [label="
+id: 224
+value: 15
+label: 9
+samples: 0
+nodes: 0"]
+	208 -> 224
+	225 [label="
+id: 225
+value: 16
+label: 2
+entropy: 0.0
+samples: 7
+nodes: 0
+classCount: Counter({5: 1})"]
+	208 -> 225
+	208 [label="
+id: 208
+value: 3
+label: 0
+attribute: 2
+entropy: 2.2359263506290326
+samples: 179
+nodes: 17
+classCount: Counter({9: 2, 7: 2, 2: 1, 1: 1, 5: 1})"]
+	0 -> 208
+	227 [label="
+id: 227
+value: 0
+label: 7
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({4: 1})"]
+	226 -> 227
+	228 [label="
+id: 228
+value: 1
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 228
+	229 [label="
+id: 229
+value: 2
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 229
+	230 [label="
+id: 230
+value: 3
+label: 7
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({7: 2})"]
+	226 -> 230
+	231 [label="
+id: 231
+value: 4
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 231
+	232 [label="
+id: 232
+value: 5
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 232
+	233 [label="
+id: 233
+value: 6
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 233
+	234 [label="
+id: 234
+value: 7
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 234
+	235 [label="
+id: 235
+value: 8
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 235
+	236 [label="
+id: 236
+value: 9
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 236
+	237 [label="
+id: 237
+value: 10
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 237
+	238 [label="
+id: 238
+value: 11
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 238
+	239 [label="
+id: 239
+value: 12
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 239
+	240 [label="
+id: 240
+value: 13
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 240
+	241 [label="
+id: 241
+value: 14
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 241
+	242 [label="
+id: 242
+value: 15
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 242
+	243 [label="
+id: 243
+value: 16
+label: 7
+samples: 0
+nodes: 0"]
+	226 -> 243
+	226 [label="
+id: 226
+value: 4
+label: 0
+attribute: 2
+entropy: 0.9182958340544896
+samples: 179
+nodes: 17
+classCount: Counter({7: 2, 4: 1})"]
+	0 -> 226
+	245 [label="
+id: 245
+value: 0
+label: 4
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({4: 1})"]
+	244 -> 245
+	246 [label="
+id: 246
+value: 1
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 246
+	247 [label="
+id: 247
+value: 2
+label: 4
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({7: 1})"]
+	244 -> 247
+	248 [label="
+id: 248
+value: 3
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 248
+	249 [label="
+id: 249
+value: 4
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 249
+	250 [label="
+id: 250
+value: 5
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 250
+	251 [label="
+id: 251
+value: 6
+label: 4
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({2: 1})"]
+	244 -> 251
+	252 [label="
+id: 252
+value: 7
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 252
+	253 [label="
+id: 253
+value: 8
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 253
+	254 [label="
+id: 254
+value: 9
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 254
+	255 [label="
+id: 255
+value: 10
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 255
+	256 [label="
+id: 256
+value: 11
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 256
+	257 [label="
+id: 257
+value: 12
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 257
+	258 [label="
+id: 258
+value: 13
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 258
+	259 [label="
+id: 259
+value: 14
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 259
+	260 [label="
+id: 260
+value: 15
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 260
+	261 [label="
+id: 261
+value: 16
+label: 4
+samples: 0
+nodes: 0"]
+	244 -> 261
+	244 [label="
+id: 244
+value: 5
+label: 0
+attribute: 2
+entropy: 1.584962500721156
+samples: 179
+nodes: 17
+classCount: Counter({4: 1, 7: 1, 2: 1})"]
+	0 -> 244
+	263 [label="
+id: 263
+value: 0
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({7: 2})"]
+	262 -> 263
+	264 [label="
+id: 264
+value: 1
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 264
+	265 [label="
+id: 265
+value: 2
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 265
+	266 [label="
+id: 266
+value: 3
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({4: 1})"]
+	262 -> 266
+	267 [label="
+id: 267
+value: 4
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 267
+	268 [label="
+id: 268
+value: 5
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 268
+	269 [label="
+id: 269
+value: 6
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 269
+	270 [label="
+id: 270
+value: 7
+label: 7
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({4: 1})"]
+	262 -> 270
+	271 [label="
+id: 271
+value: 8
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 271
+	272 [label="
+id: 272
+value: 9
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 272
+	273 [label="
+id: 273
+value: 10
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 273
+	274 [label="
+id: 274
+value: 11
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 274
+	275 [label="
+id: 275
+value: 12
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 275
+	276 [label="
+id: 276
+value: 13
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 276
+	277 [label="
+id: 277
+value: 14
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 277
+	278 [label="
+id: 278
+value: 15
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 278
+	279 [label="
+id: 279
+value: 16
+label: 7
+samples: 0
+nodes: 0"]
+	262 -> 279
+	262 [label="
+id: 262
+value: 6
+label: 0
+attribute: 25
+entropy: 1.0
+samples: 179
+nodes: 17
+classCount: Counter({7: 2, 4: 2})"]
+	0 -> 262
+	280 [label="
+id: 280
+value: 7
+label: 5
+samples: 0
+nodes: 0"]
+	0 -> 280
+	282 [label="
+id: 282
+value: 0
+label: 7
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({8: 2})"]
+	281 -> 282
+	283 [label="
+id: 283
+value: 1
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 283
+	284 [label="
+id: 284
+value: 2
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 284
+	285 [label="
+id: 285
+value: 3
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 285
+	286 [label="
+id: 286
+value: 4
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 286
+	287 [label="
+id: 287
+value: 5
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 287
+	288 [label="
+id: 288
+value: 6
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 288
+	289 [label="
+id: 289
+value: 7
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 289
+	290 [label="
+id: 290
+value: 8
+label: 7
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({8: 1})"]
+	281 -> 290
+	291 [label="
+id: 291
+value: 9
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 291
+	292 [label="
+id: 292
+value: 10
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 292
+	293 [label="
+id: 293
+value: 11
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 293
+	294 [label="
+id: 294
+value: 12
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 294
+	295 [label="
+id: 295
+value: 13
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 295
+	296 [label="
+id: 296
+value: 14
+label: 7
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({7: 1})"]
+	281 -> 296
+	297 [label="
+id: 297
+value: 15
+label: 8
+samples: 0
+nodes: 0"]
+	281 -> 297
+	298 [label="
+id: 298
+value: 16
+label: 7
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({7: 1})"]
+	281 -> 298
+	281 [label="
+id: 281
+value: 8
+label: 0
+attribute: 37
+entropy: 0.9709505944546686
+samples: 179
+nodes: 17
+classCount: Counter({8: 3, 7: 2})"]
+	0 -> 281
+	299 [label="
+id: 299
+value: 9
+label: 0
+entropy: 0.0
+samples: 179
+nodes: 0
+classCount: Counter({4: 1})"]
+	0 -> 299
+	301 [label="
+id: 301
+value: 0
+label: 4
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({4: 2})"]
+	300 -> 301
+	302 [label="
+id: 302
+value: 1
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 302
+	303 [label="
+id: 303
+value: 2
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 303
+	304 [label="
+id: 304
+value: 3
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 304
+	305 [label="
+id: 305
+value: 4
+label: 4
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({8: 1})"]
+	300 -> 305
+	306 [label="
+id: 306
+value: 5
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 306
+	307 [label="
+id: 307
+value: 6
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 307
+	308 [label="
+id: 308
+value: 7
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 308
+	309 [label="
+id: 309
+value: 8
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 309
+	310 [label="
+id: 310
+value: 9
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 310
+	311 [label="
+id: 311
+value: 10
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 311
+	312 [label="
+id: 312
+value: 11
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 312
+	313 [label="
+id: 313
+value: 12
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 313
+	314 [label="
+id: 314
+value: 13
+label: 4
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({7: 1})"]
+	300 -> 314
+	315 [label="
+id: 315
+value: 14
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 315
+	316 [label="
+id: 316
+value: 15
+label: 4
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({2: 1})"]
+	300 -> 316
+	317 [label="
+id: 317
+value: 16
+label: 4
+samples: 0
+nodes: 0"]
+	300 -> 317
+	300 [label="
+id: 300
+value: 10
+label: 0
+attribute: 58
+entropy: 1.9219280948873623
+samples: 179
+nodes: 17
+classCount: Counter({4: 2, 8: 1, 2: 1, 7: 1})"]
+	0 -> 300
+	319 [label="
+id: 319
+value: 0
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 319
+	320 [label="
+id: 320
+value: 1
+label: 0
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({8: 2})"]
+	318 -> 320
+	321 [label="
+id: 321
+value: 2
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 321
+	322 [label="
+id: 322
+value: 3
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 322
+	323 [label="
+id: 323
+value: 4
+label: 0
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({7: 1})"]
+	318 -> 323
+	324 [label="
+id: 324
+value: 5
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 324
+	325 [label="
+id: 325
+value: 6
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 325
+	326 [label="
+id: 326
+value: 7
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 326
+	327 [label="
+id: 327
+value: 8
+label: 0
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({0: 1})"]
+	318 -> 327
+	328 [label="
+id: 328
+value: 9
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 328
+	329 [label="
+id: 329
+value: 10
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 329
+	330 [label="
+id: 330
+value: 11
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 330
+	331 [label="
+id: 331
+value: 12
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 331
+	332 [label="
+id: 332
+value: 13
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 332
+	333 [label="
+id: 333
+value: 14
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 333
+	334 [label="
+id: 334
+value: 15
+label: 8
+samples: 0
+nodes: 0"]
+	318 -> 334
+	335 [label="
+id: 335
+value: 16
+label: 0
+entropy: 0.0
+samples: 5
+nodes: 0
+classCount: Counter({1: 1})"]
+	318 -> 335
+	318 [label="
+id: 318
+value: 11
+label: 0
+attribute: 34
+entropy: 1.9219280948873623
+samples: 179
+nodes: 17
+classCount: Counter({8: 2, 0: 1, 1: 1, 7: 1})"]
+	0 -> 318
+	337 [label="
+id: 337
+value: 0
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({6: 3})"]
+	336 -> 337
+	338 [label="
+id: 338
+value: 1
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 338
+	339 [label="
+id: 339
+value: 2
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 339
+	340 [label="
+id: 340
+value: 3
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 340
+	341 [label="
+id: 341
+value: 4
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({8: 1})"]
+	336 -> 341
+	342 [label="
+id: 342
+value: 5
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({0: 1})"]
+	336 -> 342
+	343 [label="
+id: 343
+value: 6
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({7: 1})"]
+	336 -> 343
+	344 [label="
+id: 344
+value: 7
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 344
+	345 [label="
+id: 345
+value: 8
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({5: 1})"]
+	336 -> 345
+	346 [label="
+id: 346
+value: 9
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 346
+	347 [label="
+id: 347
+value: 10
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 347
+	348 [label="
+id: 348
+value: 11
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({4: 1})"]
+	336 -> 348
+	349 [label="
+id: 349
+value: 12
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 349
+	350 [label="
+id: 350
+value: 13
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 350
+	351 [label="
+id: 351
+value: 14
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 351
+	352 [label="
+id: 352
+value: 15
+label: 8
+entropy: 0.0
+samples: 9
+nodes: 0
+classCount: Counter({8: 1})"]
+	336 -> 352
+	353 [label="
+id: 353
+value: 16
+label: 6
+samples: 0
+nodes: 0"]
+	336 -> 353
+	336 [label="
+id: 336
+value: 12
+label: 0
+attribute: 13
+entropy: 2.4193819456463714
+samples: 179
+nodes: 17
+classCount: Counter({6: 3, 8: 2, 0: 1, 7: 1, 4: 1, 5: 1})"]
+	0 -> 336
+	355 [label="
+id: 355
+value: 0
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({7: 1})"]
+	354 -> 355
+	356 [label="
+id: 356
+value: 1
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({2: 1})"]
+	354 -> 356
+	357 [label="
+id: 357
+value: 2
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({7: 1})"]
+	354 -> 357
+	358 [label="
+id: 358
+value: 3
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 358
+	359 [label="
+id: 359
+value: 4
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 359
+	360 [label="
+id: 360
+value: 5
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 360
+	361 [label="
+id: 361
+value: 6
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({6: 1})"]
+	354 -> 361
+	362 [label="
+id: 362
+value: 7
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({8: 1})"]
+	354 -> 362
+	363 [label="
+id: 363
+value: 8
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 363
+	364 [label="
+id: 364
+value: 9
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 364
+	365 [label="
+id: 365
+value: 10
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 365
+	366 [label="
+id: 366
+value: 11
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 366
+	367 [label="
+id: 367
+value: 12
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({0: 2})"]
+	354 -> 367
+	368 [label="
+id: 368
+value: 13
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 368
+	369 [label="
+id: 369
+value: 14
+label: 6
+entropy: 0.0
+samples: 8
+nodes: 0
+classCount: Counter({6: 1})"]
+	354 -> 369
+	370 [label="
+id: 370
+value: 15
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 370
+	371 [label="
+id: 371
+value: 16
+label: 6
+samples: 0
+nodes: 0"]
+	354 -> 371
+	354 [label="
+id: 354
+value: 13
+label: 0
+attribute: 26
+entropy: 2.25
+samples: 179
+nodes: 17
+classCount: Counter({6: 2, 7: 2, 0: 2, 8: 1, 2: 1})"]
+	0 -> 354
+	373 [label="
+id: 373
+value: 0
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 373
+	374 [label="
+id: 374
+value: 1
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 374
+	375 [label="
+id: 375
+value: 2
+label: 8
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({6: 1})"]
+	372 -> 375
+	376 [label="
+id: 376
+value: 3
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 376
+	377 [label="
+id: 377
+value: 4
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 377
+	378 [label="
+id: 378
+value: 5
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 378
+	379 [label="
+id: 379
+value: 6
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 379
+	380 [label="
+id: 380
+value: 7
+label: 8
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({2: 1})"]
+	372 -> 380
+	381 [label="
+id: 381
+value: 8
+label: 8
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({0: 1})"]
+	372 -> 381
+	382 [label="
+id: 382
+value: 9
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 382
+	383 [label="
+id: 383
+value: 10
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 383
+	384 [label="
+id: 384
+value: 11
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 384
+	385 [label="
+id: 385
+value: 12
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 385
+	386 [label="
+id: 386
+value: 13
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 386
+	387 [label="
+id: 387
+value: 14
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 387
+	388 [label="
+id: 388
+value: 15
+label: 8
+samples: 0
+nodes: 0"]
+	372 -> 388
+	389 [label="
+id: 389
+value: 16
+label: 8
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({8: 3})"]
+	372 -> 389
+	372 [label="
+id: 372
+value: 14
+label: 0
+attribute: 13
+entropy: 1.7924812503605778
+samples: 179
+nodes: 17
+classCount: Counter({8: 3, 6: 1, 2: 1, 0: 1})"]
+	0 -> 372
+	391 [label="
+id: 391
+value: 0
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({2: 1})"]
+	390 -> 391
+	392 [label="
+id: 392
+value: 1
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({4: 1})"]
+	390 -> 392
+	393 [label="
+id: 393
+value: 2
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 393
+	394 [label="
+id: 394
+value: 3
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({6: 1})"]
+	390 -> 394
+	395 [label="
+id: 395
+value: 4
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 395
+	396 [label="
+id: 396
+value: 5
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 396
+	397 [label="
+id: 397
+value: 6
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 397
+	398 [label="
+id: 398
+value: 7
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({4: 1})"]
+	390 -> 398
+	400 [label="
+id: 400
+value: 0
+label: 8
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({8: 1})"]
+	399 -> 400
+	401 [label="
+id: 401
+value: 1
+label: 8
+entropy: 0.0
+samples: 2
+nodes: 0
+classCount: Counter({2: 1})"]
+	399 -> 401
+	402 [label="
+id: 402
+value: 2
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 402
+	403 [label="
+id: 403
+value: 3
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 403
+	404 [label="
+id: 404
+value: 4
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 404
+	405 [label="
+id: 405
+value: 5
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 405
+	406 [label="
+id: 406
+value: 6
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 406
+	407 [label="
+id: 407
+value: 7
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 407
+	408 [label="
+id: 408
+value: 8
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 408
+	409 [label="
+id: 409
+value: 9
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 409
+	410 [label="
+id: 410
+value: 10
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 410
+	411 [label="
+id: 411
+value: 11
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 411
+	412 [label="
+id: 412
+value: 12
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 412
+	413 [label="
+id: 413
+value: 13
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 413
+	414 [label="
+id: 414
+value: 14
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 414
+	415 [label="
+id: 415
+value: 15
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 415
+	416 [label="
+id: 416
+value: 16
+label: 8
+samples: 0
+nodes: 0"]
+	399 -> 416
+	399 [label="
+id: 399
+value: 8
+label: 4
+attribute: 1
+entropy: 1.0
+samples: 15
+nodes: 17
+classCount: Counter({8: 1, 2: 1})"]
+	390 -> 399
+	417 [label="
+id: 417
+value: 9
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 417
+	418 [label="
+id: 418
+value: 10
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 418
+	419 [label="
+id: 419
+value: 11
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({4: 1})"]
+	390 -> 419
+	420 [label="
+id: 420
+value: 12
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({0: 1})"]
+	390 -> 420
+	421 [label="
+id: 421
+value: 13
+label: 4
+entropy: 0.0
+samples: 15
+nodes: 0
+classCount: Counter({6: 1})"]
+	390 -> 421
+	422 [label="
+id: 422
+value: 14
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 422
+	423 [label="
+id: 423
+value: 15
+label: 0
+samples: 0
+nodes: 0"]
+	390 -> 423
+	425 [label="
+id: 425
+value: 0
+label: 0
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({8: 1})"]
+	424 -> 425
+	426 [label="
+id: 426
+value: 1
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 426
+	427 [label="
+id: 427
+value: 2
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 427
+	428 [label="
+id: 428
+value: 3
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 428
+	429 [label="
+id: 429
+value: 4
+label: 0
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({0: 1})"]
+	424 -> 429
+	430 [label="
+id: 430
+value: 5
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 430
+	431 [label="
+id: 431
+value: 6
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 431
+	432 [label="
+id: 432
+value: 7
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 432
+	433 [label="
+id: 433
+value: 8
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 433
+	434 [label="
+id: 434
+value: 9
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 434
+	435 [label="
+id: 435
+value: 10
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 435
+	436 [label="
+id: 436
+value: 11
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 436
+	437 [label="
+id: 437
+value: 12
+label: 0
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({0: 3})"]
+	424 -> 437
+	438 [label="
+id: 438
+value: 13
+label: 0
+entropy: 0.0
+samples: 6
+nodes: 0
+classCount: Counter({0: 1})"]
+	424 -> 438
+	439 [label="
+id: 439
+value: 14
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 439
+	440 [label="
+id: 440
+value: 15
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 440
+	441 [label="
+id: 441
+value: 16
+label: 0
+samples: 0
+nodes: 0"]
+	424 -> 441
+	424 [label="
+id: 424
+value: 16
+label: 4
+attribute: 37
+entropy: 0.6500224216483541
+samples: 15
+nodes: 17
+classCount: Counter({0: 5, 8: 1})"]
+	390 -> 424
+	390 [label="
+id: 390
+value: 15
+label: 0
+attribute: 18
+entropy: 2.1559130951758245
+samples: 179
+nodes: 17
+classCount: Counter({0: 6, 4: 3, 6: 2, 8: 2, 2: 2})"]
+	0 -> 390
+	443 [label="
+id: 443
+value: 0
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({0: 1})"]
+	442 -> 443
+	444 [label="
+id: 444
+value: 1
+label: 6
+samples: 0
+nodes: 0"]
+	442 -> 444
+	445 [label="
+id: 445
+value: 2
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({8: 1})"]
+	442 -> 445
+	446 [label="
+id: 446
+value: 3
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({0: 1})"]
+	442 -> 446
+	447 [label="
+id: 447
+value: 4
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({0: 1})"]
+	442 -> 447
+	449 [label="
+id: 449
+value: 0
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 449
+	450 [label="
+id: 450
+value: 1
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 450
+	451 [label="
+id: 451
+value: 2
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 451
+	452 [label="
+id: 452
+value: 3
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 452
+	453 [label="
+id: 453
+value: 4
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 453
+	454 [label="
+id: 454
+value: 5
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 454
+	455 [label="
+id: 455
+value: 6
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 455
+	456 [label="
+id: 456
+value: 7
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 456
+	457 [label="
+id: 457
+value: 8
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 457
+	458 [label="
+id: 458
+value: 9
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 458
+	459 [label="
+id: 459
+value: 10
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 459
+	460 [label="
+id: 460
+value: 11
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 460
+	461 [label="
+id: 461
+value: 12
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 461
+	462 [label="
+id: 462
+value: 13
+label: 0
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({6: 1})"]
+	448 -> 462
+	463 [label="
+id: 463
+value: 14
+label: 0
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({8: 1})"]
+	448 -> 463
+	464 [label="
+id: 464
+value: 15
+label: 0
+samples: 0
+nodes: 0"]
+	448 -> 464
+	465 [label="
+id: 465
+value: 16
+label: 0
+entropy: 0.0
+samples: 4
+nodes: 0
+classCount: Counter({0: 2})"]
+	448 -> 465
+	448 [label="
+id: 448
+value: 5
+label: 2
+attribute: 11
+entropy: 1.5
+samples: 29
+nodes: 17
+classCount: Counter({0: 2, 6: 1, 8: 1})"]
+	442 -> 448
+	466 [label="
+id: 466
+value: 6
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({0: 1})"]
+	442 -> 466
+	467 [label="
+id: 467
+value: 7
+label: 6
+samples: 0
+nodes: 0"]
+	442 -> 467
+	469 [label="
+id: 469
+value: 0
+label: 8
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({8: 1})"]
+	468 -> 469
+	470 [label="
+id: 470
+value: 1
+label: 8
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({0: 2})"]
+	468 -> 470
+	471 [label="
+id: 471
+value: 2
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 471
+	472 [label="
+id: 472
+value: 3
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 472
+	473 [label="
+id: 473
+value: 4
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 473
+	474 [label="
+id: 474
+value: 5
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 474
+	475 [label="
+id: 475
+value: 6
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 475
+	476 [label="
+id: 476
+value: 7
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 476
+	477 [label="
+id: 477
+value: 8
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 477
+	478 [label="
+id: 478
+value: 9
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 478
+	479 [label="
+id: 479
+value: 10
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 479
+	480 [label="
+id: 480
+value: 11
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 480
+	481 [label="
+id: 481
+value: 12
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 481
+	482 [label="
+id: 482
+value: 13
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 482
+	483 [label="
+id: 483
+value: 14
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 483
+	484 [label="
+id: 484
+value: 15
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 484
+	485 [label="
+id: 485
+value: 16
+label: 0
+samples: 0
+nodes: 0"]
+	468 -> 485
+	468 [label="
+id: 468
+value: 8
+label: 2
+attribute: 9
+entropy: 0.9182958340544896
+samples: 29
+nodes: 17
+classCount: Counter({0: 2, 8: 1})"]
+	442 -> 468
+	486 [label="
+id: 486
+value: 9
+label: 6
+samples: 0
+nodes: 0"]
+	442 -> 486
+	487 [label="
+id: 487
+value: 10
+label: 6
+samples: 0
+nodes: 0"]
+	442 -> 487
+	488 [label="
+id: 488
+value: 11
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({6: 1})"]
+	442 -> 488
+	490 [label="
+id: 490
+value: 0
+label: 6
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({6: 2})"]
+	489 -> 490
+	491 [label="
+id: 491
+value: 1
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 491
+	492 [label="
+id: 492
+value: 2
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 492
+	493 [label="
+id: 493
+value: 3
+label: 6
+entropy: 0.0
+samples: 3
+nodes: 0
+classCount: Counter({8: 1})"]
+	489 -> 493
+	494 [label="
+id: 494
+value: 4
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 494
+	495 [label="
+id: 495
+value: 5
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 495
+	496 [label="
+id: 496
+value: 6
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 496
+	497 [label="
+id: 497
+value: 7
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 497
+	498 [label="
+id: 498
+value: 8
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 498
+	499 [label="
+id: 499
+value: 9
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 499
+	500 [label="
+id: 500
+value: 10
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 500
+	501 [label="
+id: 501
+value: 11
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 501
+	502 [label="
+id: 502
+value: 12
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 502
+	503 [label="
+id: 503
+value: 13
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 503
+	504 [label="
+id: 504
+value: 14
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 504
+	505 [label="
+id: 505
+value: 15
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 505
+	506 [label="
+id: 506
+value: 16
+label: 6
+samples: 0
+nodes: 0"]
+	489 -> 506
+	489 [label="
+id: 489
+value: 12
+label: 2
+attribute: 2
+entropy: 0.9182958340544896
+samples: 29
+nodes: 17
+classCount: Counter({6: 2, 8: 1})"]
+	442 -> 489
+	507 [label="
+id: 507
+value: 13
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({2: 2})"]
+	442 -> 507
+	508 [label="
+id: 508
+value: 14
+label: 2
+entropy: 0.0
+samples: 29
+nodes: 0
+classCount: Counter({2: 1})"]
+	442 -> 508
+	509 [label="
+id: 509
+value: 15
+label: 6
+samples: 0
+nodes: 0"]
+	442 -> 509
+	511 [label="
+id: 511
+value: 0
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 511
+	512 [label="
+id: 512
+value: 1
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 512
+	513 [label="
+id: 513
+value: 2
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({6: 1})"]
+	510 -> 513
+	514 [label="
+id: 514
+value: 3
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({6: 2})"]
+	510 -> 514
+	515 [label="
+id: 515
+value: 4
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({6: 2})"]
+	510 -> 515
+	516 [label="
+id: 516
+value: 5
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 516
+	517 [label="
+id: 517
+value: 6
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({2: 1})"]
+	510 -> 517
+	518 [label="
+id: 518
+value: 7
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({2: 2})"]
+	510 -> 518
+	519 [label="
+id: 519
+value: 8
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 519
+	520 [label="
+id: 520
+value: 9
+label: 2
+entropy: 0.0
+samples: 10
+nodes: 0
+classCount: Counter({2: 2})"]
+	510 -> 520
+	521 [label="
+id: 521
+value: 10
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 521
+	522 [label="
+id: 522
+value: 11
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 522
+	523 [label="
+id: 523
+value: 12
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 523
+	524 [label="
+id: 524
+value: 13
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 524
+	525 [label="
+id: 525
+value: 14
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 525
+	526 [label="
+id: 526
+value: 15
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 526
+	527 [label="
+id: 527
+value: 16
+label: 2
+samples: 0
+nodes: 0"]
+	510 -> 527
+	510 [label="
+id: 510
+value: 16
+label: 2
+attribute: 41
+entropy: 1.0
+samples: 29
+nodes: 17
+classCount: Counter({2: 5, 6: 5})"]
+	442 -> 510
+	442 [label="
+id: 442
+value: 16
+label: 0
+attribute: 43
+entropy: 1.9431766843351301
+samples: 179
+nodes: 17
+classCount: Counter({6: 9, 2: 8, 0: 8, 8: 4})"]
+	0 -> 442
+}

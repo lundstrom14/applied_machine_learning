@@ -56,7 +56,7 @@ class ID3DecisionTreeClassifier :
     def find_split_attr(self, data, target, attributes):
         # for all attribute set, test
         IS = self.entropy(target)
-        IG_with_attr = (-9999,"") 
+        IG_with_attr = (-1,"") 
 
         # for every remaning attributes, we want to get the information Gain 
         attr = list(global_attributes.keys())
@@ -79,7 +79,6 @@ class ID3DecisionTreeClassifier :
     
     # Return subset entropy for the subeset. Weighed. data_target = column of data correspoding to an attribute
     def subset_entropy(self, data_target, target, attr_values):
-        eps =  7./3 - 4./3 - 1
         IS_s = 0
         #IS_all_s = []
         t = len(data_target)
@@ -94,13 +93,9 @@ class ID3DecisionTreeClassifier :
             t_v = data_target.count(v)
             for e in l: #for every element in the list of unique-count
                 if v in e[0]:
-                    fraq = e[1]/(t_v+eps) # len of data with attribute v
-                    if fraq == 0: 
-                        IS_sv -= 0
-                    else:
-                        IS_sv -= fraq * math.log2(fraq+eps) #subset of IS, for example color_green
-
-            IS_s +=  t_v/(t+eps) * IS_sv
+                    fraq = e[1]/t_v # len of data with attribute v
+                    IS_sv -= fraq * math.log2(fraq) #subset of IS, for example color_green
+            IS_s +=  t_v/t * IS_sv
         return IS_s
                 
     # the entry point for the recursive ID3-algorithm, you need to fill in the calls to your recursive implementation
@@ -143,13 +138,13 @@ class ID3DecisionTreeClassifier :
 
             # for each v in values, create a new tree branch below the root node
             # rem_attr = attributes.copy() # remaining attributes
-            values = attributes[A]  ############# ERROR IN DIGITS HERE, WE CANT SPLIT ON THE SAME ATTRIBUTE AGAIN
+            values = attributes[A]
             for v in values:
 
                 # let samples(v) be subset of samples that have value v. 
                 samples = []
                 for d,t in zip(data,target):
-                    if v == d[attr_index]: #############################################################################################
+                    if v in d[attr_index]:
                         samples.append([d,t])  #samples is on the form [[('y', 's', 'r'), '+'], [..]], ie nested tuples.
 
                 root.update({"value": v})
